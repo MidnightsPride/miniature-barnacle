@@ -112,7 +112,7 @@ const thoughtController = {
       if (!reaction) {
         return res
           .status(404)
-          .json({ message: "Unknown ID. Please check thought and reaction ID" });
+          .json({ message: "Unknown ID. Please check thought and reaction ID!" });
       }
 
       return res.status(200).json(reaction);
